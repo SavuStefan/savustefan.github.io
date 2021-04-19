@@ -9,7 +9,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-      <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+      <!--<link href="https://unpkg.com/pattern.css" rel="stylesheet">-->
       <title>Savu Adrian</title>
   </head>
 <body>
@@ -104,7 +104,7 @@
                 <div class="post">
                     <img class="thumbnail" src="#">
                     <div class="post-preview">
-                        <h4 class="post-title">Ground Zero - Portofolio Website</h4>
+                        <h4 class="post-title">Ground Zero - Portfolio Website</h4>
                         <p class="post-intro">My first project is this portofolio website.</p>
                         <hr>
                         <a href="blog.html" target="_blank">Read More</a>
@@ -144,14 +144,26 @@
 
 <section class="s2">
     <div class="main-container">
+        <h4 style="text-align: center">Contact</h4>
         <div class="about-wrapper">
             <div class="contact-icon">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ultrices nisl, in condimentum nisi egestas non. Fusce a dapibus urna. Nullam auctor faucibus du</p>
+                <div><i class="fas fa-phone"></i>1234567890</div>
+                <div><i class="fas fa-map-marker-alt"></i>Sibiu</div>
+                <div><i class="far fa-envelope"></i>yahoo.com</div>
             </div>
 
-            <div class="contact-form">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit ultrices nisl, in condimentum nisi egestas non. Fusce a dapibus urna. Nullam auctor faucibus du</p>
-            </div>
+            <form class="contact-form">
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+                <label>Email</label>
+                <input class="input-field" type="text" name="email" placeholder=" Optional">
+                <label>Message</label>
+                <textarea class="input-field" name="message"></textarea>
+                <input class="submit-button" type="submit" value="Send">
+            </form>
+
         </div>
     </div>
 </section>
@@ -160,6 +172,7 @@
     <p>Thank you for clicking!</p>
     <div class="heart"></div>
 </footer>
+
 
 </body>
 </html>
