@@ -1,4 +1,4 @@
-
+/**basic config**/
 
 * {
     box-sizing: border-box;
@@ -28,8 +28,10 @@ a {
     color: #17a2b8;
 }
 
+/**sections setup**/
+
 .s1 {
-    border-bottom: 1.5px solid yellow;
+    border-bottom: 5px solid royalblue;
     overflow: auto;
     background-color: #6883bc;
     background-image: radial-gradient(#79a7d3 1.25px, #6883bc 1.25px);
@@ -37,7 +39,7 @@ a {
 }
 
 .s2 {
-    border-bottom: 1px yellow;
+    border-bottom: 5px solid yellow;
     overflow: auto;
 }
 
@@ -46,21 +48,29 @@ a {
     margin: 0 auto;
 }
 
+/**title section**/
 
 .greeting-wrapper{
     display: grid;
     text-align: center;
     align-content: center;
     min-height: 10em;
-
+    line-height: 3rem;
 }
 
 .title {
-    font-size: 3rem;
-    color: yellow;
+    font-size: 3.5rem;
+    color: #f6f6f6;
     font-weight: 300;
     text-decoration: underline;
 }
+
+.subtitle {
+    font-size: 1.3rem;
+    color: #f6f6f6;
+}
+
+/**grid setup**/
 
 .intro-wrapper{
     background-color: ghostwhite;
@@ -75,6 +85,7 @@ a {
 ;
 }
 
+/**navigation**/
 
 .nav-wrapper{
     border-radius:5px 5px 0 0;
@@ -102,6 +113,8 @@ a {
     margin-left:5px;
 }
 
+/**dots**/
+
 .dots-wrapper{
     display: flex;
     padding: 10px;
@@ -126,9 +139,9 @@ a {
     border-radius: 50%;
     margin: 5px;
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-
 }
 
+/**grid column setup**/
 
 .left-column{
     grid-area: left-column;
@@ -148,9 +161,8 @@ a {
 .img {
     display: block;
     margin:0 auto;
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -161,6 +173,7 @@ a {
     padding-left: 30px;
     padding-top: 30px;
 }
+
 #preview {
     position: relative;
     width: 300px;
@@ -198,8 +211,7 @@ a {
     right: -5px;
 }
 
-
-
+/**about me section**/
 
 .about-wrapper {
     display: grid;
@@ -213,7 +225,7 @@ a {
     justify-content: left;
 }
 
-/**prokect**/
+/**project section**/
 
 .post-wrapper{
     display: grid;
@@ -225,8 +237,6 @@ a {
 
 .post{
     border:1px solid darkgray;
-    -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
     box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
 
@@ -252,6 +262,8 @@ a {
     font-size: 14px;
 }
 
+/** footer and heart section**/
+
 .footer {
     height: 150px;
     display: grid;
@@ -269,8 +281,8 @@ a {
     animation-name: beat;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-
 }
+
 .heart:after {
     background-color: pink;
     content: "";
@@ -281,6 +293,7 @@ a {
     top: 0;
     left: 25px;
 }
+
 .heart:before {
     background-color: pink;
     content: "";
@@ -300,6 +313,9 @@ a {
         transform: scale(0.6) rotate(-45deg);
     }
 }
+
+
+/**responsive**/
 
 @media screen and (max-width: 1200px){
     .main-container{
@@ -321,7 +337,6 @@ a {
         justify-content: center;
         padding-top: 30px;
     }
-
 }
 
 @media screen and (max-width: 400px){
@@ -334,9 +349,7 @@ a {
 
     #preview{
         width: 280px;
-
     }
-
 }
 
 
