@@ -13,10 +13,12 @@ html, body{
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Russo One', sans-serif;
     font-weight: 500;
+    font-size: 2.7vh;
 }
 
 p, li, span, label, input, textarea {
     font-family: 'Roboto Mono', monospace;
+    font-size: 1.7vh;
 }
 
 ul {
@@ -25,21 +27,21 @@ ul {
 
 a {
     text-decoration: none;
-    color: #17a2b8;
+    color: #610805;
 }
 
 /**sections setup**/
 
 .s1 {
-    border-bottom: 5px solid royalblue;
+    border-bottom: 5px solid #E7BD54;
     overflow: auto;
-    background-color: #6883bc;
-    background-image: radial-gradient(#79a7d3 1.25px, #6883bc 1.25px);
+    background-color: #3C8DB9;
+    background-image: radial-gradient(#79a7d3 1.25px, #3C8DB9 1.25px);
     background-size: 25px 25px;
 }
 
 .s2 {
-    border-bottom: 5px solid yellow;
+    border-bottom: 5px solid #540804;
     overflow: auto;
 }
 
@@ -94,7 +96,7 @@ a {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid black;
-    background-color: #c6d7eb;
+    background-color: #E7BD54;
 }
 
 #navigation a{
@@ -167,7 +169,7 @@ a {
 
 
 .preview-shadow {
-    background-color: rgba(34, 167, 240, 1);
+    background-color: #E3B33B;
     width: 300px;
     height: 180px;
     padding-left: 30px;
@@ -177,8 +179,8 @@ a {
 #preview {
     position: relative;
     width: 300px;
-    border: 1.5px solid #ffdf00;
-    background-color: rgba(228, 241, 254, 1);
+    border: 1.5px solid #111D4A;
+    background-color: #F2DDA6;
     padding: 15px;
 }
 
@@ -186,7 +188,7 @@ a {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    border: 1.5px solid #9b870c;
+    border: 1.5px solid #332E3C;
     background-color: white;
     position: absolute;
 }
@@ -223,13 +225,14 @@ a {
 #skills {
     display: flex;
     justify-content: left;
+    background-color: #E7BD54;
 }
 
 /**project section**/
 
 .post-wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
+    grid-template-columns: repeat(auto-fit, 350px);
     gap:20px;
     justify-content: center;
     padding-bottom: 50px;
@@ -284,7 +287,7 @@ i {
     display: block;
     max-width: 600px;
     border: 1px solid #c1c1c1;
-    background-color: #eaeaea;
+    background-color: #E7BD54;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 50px;
@@ -292,8 +295,7 @@ i {
 
 .input-field {
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #c1c1c1;
     font-size: 14px;
@@ -317,12 +319,12 @@ textarea {
     padding-bottom: 10px;
     border: none;
     color: #f6f6f6;
-    background-color: steelblue;
+    background-color: #8C5471;
     font-size: 16px;
 }
 
 .submit-button:hover {
-    background-color: red;
+    background-color: #4C2F3D;
     cursor: pointer;
 }
 /** footer and heart section**/
