@@ -268,6 +268,16 @@ a {
 
 /**contact icons**/
 
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.hr {
+    width: 15rem;
+}
+
 .contact-icon {
     display: flex;
     flex-direction: column;
