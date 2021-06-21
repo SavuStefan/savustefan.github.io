@@ -28,6 +28,7 @@ ul {
 a {
     text-decoration: none;
     color: #610805;
+    font-weight: 600;
 }
 
 /**sections setup**/
@@ -302,6 +303,15 @@ i {
 .logo img {
     width: 65%;
 }
+
+.vertical-line {
+    position: absolute;
+    height: 500px;
+    left: 45%;
+    margin-bottom: 40px;
+    border-right: 3px solid #3C8DB9;
+}
+
 /**contact form**/
 
 .contact-form {
@@ -435,6 +445,12 @@ textarea {
 
     #preview{
         width: 280px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .vertical-line{
+        display: none;
     }
 }
 
