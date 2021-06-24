@@ -58,7 +58,7 @@ a {
     text-align: center;
     align-content: center;
     min-height: 10em;
-    line-height: 3rem;
+    line-height: 3.5rem;
 }
 
 .title {
@@ -163,9 +163,9 @@ a {
 
 .img {
     display: block;
-    margin:0 auto;
-    height: 100%;
-    width: 100%;
+    margin: 0 auto;
+    height: 350px;
+    width: 350px;
 }
 
 
@@ -275,7 +275,7 @@ a {
     margin-bottom: 0;
 }
 
-.hr {
+.horizontal-line {
     width: 15rem;
 }
 
