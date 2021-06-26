@@ -306,7 +306,7 @@ i {
 
 .vertical-line {
     position: absolute;
-    height: 500px;
+    height: 400px;
     left: 45%;
     margin-bottom: 40px;
     border-right: 3px solid #3C8DB9;
@@ -457,5 +457,10 @@ textarea {
     }
 }
 
-
+@media screen and (max-width: 400px){
+    .img{
+        height: 250px;
+        width: 250px;
+    }
+}
 
