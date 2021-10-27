@@ -19,9 +19,10 @@ function createNotification() {
 
     toast.appendChild(notif)
 
-    setTimeout(() =>{
+    setTimeout(() => {
+
         notif.remove()
-    }, 5000)
+    }, 3000)
 }
 
 function getRandomMessage() {
