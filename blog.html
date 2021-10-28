@@ -11,7 +11,9 @@
 
     <style type="text/css">
         .img-container{
-            max-width: 600px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 550px);
+            gap: 15px;
         }
 
         img{
@@ -23,14 +25,11 @@
 </head>
 <body>
 <div class="nav-wrapper">
-
-    <a href="index.html">
         <div class="dots-wrapper">
-            <div id="dot-1" class="browser-dot"></div>
-            <div id="dot-2" class="browser-dot"></div>
-            <div id="dot-3" class="browser-dot"></div>
+            <button type="button" id="dot-1" class="browser-dot"></button>
+            <button type="button" id="dot-2" class="browser-dot"></button>
+            <button type="button" id="dot-3" class="browser-dot"></button>
         </div>
-    </a>
 
     <ul id="navigation">
         <li><a href="index.html">Go back</a></li>
@@ -42,7 +41,7 @@
         <br>
 
         <div class="img-container">
-            <img src="images/web-image.jpg" alt="web-image">
+            <img src="images/portfolio-image.jpg" alt="web-image">
         </div>
 
         <h3>My portfolio website</h3>
@@ -54,7 +53,9 @@
             <br>
 
             <div class="img-container">
-                <img src="images/grid-code.png" alt="grid-code">
+                <img src="images/Gridsetup.png" alt="grid-setup">
+                <img src="images/Gridcolumn.png" alt="grid-column">
+                <img src="images/AboutGrid.png" alt="about-grid">
             </div>
 
             <br>
@@ -67,7 +68,7 @@
             Fun fact: As a passionate gamer, I tend name my projects after my favourite video games. "Ground Zero" is inspired after one of the game from the franchise Metal Gear (Metal Gear Solid V: Ground Zeroes).</p>
 
 
-        <h5>My logo</h5>
+        <h4>My logo</h4>
         <div class="img-container">
             <img style="width: 50%" src="images/logo.png" alt="logo">
         </div>
