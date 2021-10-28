@@ -1,3 +1,8 @@
+let Audio = document.getElementById("notification")
+function PlaySound (){
+    Audio.play()
+}
+
 const button = document.getElementById('dot-3')
 const toast = document.getElementById('toasts')
 
