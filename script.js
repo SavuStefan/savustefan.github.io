@@ -1,17 +1,21 @@
+/*red button*/
+
 let Audio = document.getElementById("notification")
 function PlaySound (){
     Audio.play()
+    alert()
 }
 
+/*green button*/
 const button = document.getElementById('dot-3')
 const toast = document.getElementById('toasts')
 
 const message = [
-    'Greetings, humans!',
-    'I know kung fu',
-    'Now I am become Death, the destroyer of worlds',
-    'This is my BOOM stick!',
-    'Why so serious?',
+    '“FINISH HIM!”',
+    '“War... war never changes.”',
+    '”Nothing is true, everything is permitted.”',
+    '“This is my BOOM stick!”',
+    '“Praise the sun!“',
 ]
 
 button.addEventListener('click', ()=> createNotification())
@@ -33,3 +37,16 @@ function createNotification() {
 function getRandomMessage() {
     return message[Math.floor(Math.random() * message.length)]
 }
+
+/*Konami code*/
+const pressed = []
+const secretcode = "ArrowUp, ArrowUp, ArrowDown, ArrowDown, ArrowLeft, ArrowRight, ArrowLeft, ArrowRight, b, a"
+
+window.addEventListener("keyup", (e)=>{
+    pressed.push(e.key)
+    console.log(e.key)
+    pressed.slice(-secretcode.length - 1, pressed.length - secretcode.length)
+    if (pressed.join("").includes(secretcode)){
+    alert()
+    }
+})
