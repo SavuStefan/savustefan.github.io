@@ -1,186 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8"/>
-      <meta name="author" content="Savu Ștefan-Adrian">
-      <link rel="stylesheet" href="styles.css"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-      <!--<link href="https://unpkg.com/pattern.css" rel="stylesheet">-->
-      <title>Savu Adrian</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio WebsiteV2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
+<div id="menu-bars" class="fas fa-bars"></div>
 
-<audio id="notification">
-    <source src="assets/notification.mp3" type="audio/mpeg">
-</audio>
+<header>
+    <span class="logo">My<span> Portfolio </span></span>
 
-<div id="toasts">
-</div>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About me</a>
+        <a href="#technology">Technologies</a>
+        <a href="#experience">Experience & Education</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<!--Section Start-->
+    <div class="follow">
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
 
-<section class="s1">
-    <div class="main-container">
-        <div class="greeting-wrapper">
-            <span class="title">Hi,I'm Savu Adrian</span>
-            <span class="subtitle">#Learning Web Development</span>
+</header>
+
+<!-- home section -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span class="hi">Hello there!</span>
+        <h3>I am <span>Savu Adrian</span></h3>
+        <p class="info">Student Passionate about Technology</p>
+        <p class="text"> Welcome to my website!</p>
+        <a href="#portfolio" class="btn">Check Out My Work</a>
+    </div>
+    <div class="image">
+        <img src="images/photo.jpg" alt="my-picture">
+    </div>
+
+</section>
+
+<!-- home section -->
+
+<!-- about section -->
+
+<section class="about" id="about">
+    <h1 class="heading">About<span> Me </span></h1>
+    <div class="row-1">
+        <div class="content">
+            <p>A student who discovered the realm of coding, eager to learn new things and struggle along the way. Creative oriented person, who likes reading fantasy books and playing video games. I consider myself to be an enthusiastic student, having a deep sense of curiosity as one of my strongest attributes. Continually striving for improvement and learning new things.
+                I'm passionate about technology, with a keen interest on how can be used to solve business problems.</p>
+        </div>
+    </div>
+
+    <h1 class="heading"><span> my </span> skills</h1>
+    <div class="row-2">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Experience</h3>
+                <p>working with international teams</p>
+
+            </div>
+            <div class="box">
+                <h3>Curios</h3>
+                <p>to learn</p>
+            </div>
+
+            <div class="box">
+                <h3>Know-how</h3>
+                <p>Office Programs</p>
+            </div>
+            <div class="box">
+                <h3>Communication skills</h3>
+            </div>
+
+            <div class="box">
+                <h3>Attention</h3>
+                <p>to detail</p>
+            </div>
+
+            <div class="box">
+                <h3>Quality</h3>
+                <p>orientation</p>
+            </div>
+
+            <div class="box">
+                <h3>Problem solving</h3>
+                <p>capabilities</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- about section -->
+
+<!-- technology section -->
+
+<section class="technology" id="technology">
+    <h1 class="heading"> <span> technology </span> experience </h1>
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fa-sharp fa-solid fa-folder"></i>
+            <h3>SAP ERP</h3>
+            <p>I learned the basics of ERP and it's 7 modules (Master Data, Materials Management, Production Planning, Sales & Distribution, Reports, Accounts Payable & Receivable) in University.</p>
         </div>
 
-        <div class="intro-wrapper">
-            <div class="nav-wrapper">
-                    <div class="dots-wrapper">
-                        <button type="button" onclick="PlaySound()" id="dot-1" class="browser-dot"></button>
-                        <button type="button" id="dot-2" class="browser-dot"></button>
-                        <button type="button" id="dot-3" class="browser-dot"></button>
-                    </div>
-                <ul id="navigation">
-                    <li><a href="https://github.com/savustefan" target="_blank">Check out my work</a></li>
-                </ul>
-            </div>
+        <div class="box">
+            <i class="fa-solid fa-database"></i>
+            <h3>SQL</h3>
+            <p>I learned SQL and basics commands in University.</p>
+        </div>
 
-            <div class="left-column">
-                <div class="preview-shadow">
-                    <div id="preview">
-                        <div id="corner-tl" class="corner"></div>
-                        <div id="corner-tr" class="corner"></div>
-                        <h1>Hello there!</h1>
-                        <p>General Kenobi! You are a bold one entering here. Feel free to explore and welcome! :)</p>
-                        <div id="corner-bl" class="corner"></div>
-                        <div id="corner-br" class="corner"></div>
-                    </div>
+        <div class="box">
+            <i class="fa-brands fa-wordpress"></i>
+            <h3>HTML, CSS & WordPress</h3>
+            <p>I learned the basics of those after my internship at Idea Perpetua, which I deepened in my free time.</p>
+        </div>
+
+        <div class="box">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>I am learning the basics of this language.</p>
+        </div>
+
+        <div class="box">
+            <i class="fa-brands fa-windows"></i>
+            <h3>PowerAutomate & Confluence</h3>
+            <p>I worked with this technology in my internship at Continental Automotive.</p>
+        </div>
+
+        <div class="box">
+            <i class="fa-solid fa-image"></i>
+            <h3>Adobe Illustrator & Photoshop</h3>
+            <p>Some previous experience in my internship at Idea Perpetua.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- technology section -->
+
+<!-- experience section -->
+
+<section class="experience" id="experience">
+    <h1 class="heading"><span> my </span>experience</h1>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="content">
+                <span>Aug 2020 - Jul 2021</span>
+                <h3>Training Center Intern</h3>
+                <h2>Continental Automotive</h2>
+                <p>I was supporting e-learning creation and class activities within the Automotive Operations Manufacturing Training Center. My daily activities included, but not limited to: creating eLearnings using Articulate Storyline 3, Vyond and Camtasia, take part in the alignments regarding the eLeanings/classes creation and providing support on various topics.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+                <span>Mar 2020 - May 2020</span>
+                <h3>Intern</h3>
+                <h2>Idea Perpetua</h2>
+                <p>I was responsible on the marketing and web development. My tasks included configuring social media marketing plans and webdesign with Adobe Ilustrator and Photoshop. On the development part I was using WordPress, HTML & CSS.</p>
+            </div>
+        </div>
+
+        <h1 class="heading"><span> my </span>education</h1>
+
+        <div class="box">
+                <div class="content">
+                    <span>Sep 2022 - Jul 2024</span>
+                    <h3>Master Degree in Informatics, Specialization: Advanced computer systems and technologies</h3>
+                    <h2>Lucian Blaga University, Faculty of Science</h2>
                 </div>
+        </div>
 
+        <div class="box">
+            <div class="content">
+                <span>Oct 2019 - Jul 2022</span>
+                <h3>Bachelor Degree in Business Administration, Specialization: Commerce, Tourism and Services Economy</h3>
+                <h2>Lucian Blaga University, Faculty of Economics Science</h2>
             </div>
-            <div class="right-column">
-                   <img class="img" src="images/me.jpg" alt="me">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- experience section -->
+
+<!-- portfolio section -->
+
+<section class="portfolio" id="portfolio">
+    <h1 class="heading"><span> my </span> portfolio</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/portfolio-image.jpg" alt="">
+            <h3>Personal Website</h3>
+            <div class="icons">
+                <a href="Legacy%20Site/index-legacy.html" target="_blank" class="fas fa-light fa-laptop-code"></a>
+                <a href="blog.html" target="_blank" class="fas fa-regular fa-circle-info"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/from-the-shadows.png" alt="">
+            <h3>Small Text Based Rpg</h3>
+            <div class="icons">
+                <a href="https://savustefan.github.io/from-the-shadows/" target="_blank" class="fas fa-light fa-laptop-code"></a>
+                <a href="blog2.html" target="_blank" class="fas fa-regular fa-circle-info"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/ProjectJS.jpg" alt="">
+            <h3>Javascript Projects</h3>
+            <div class="icons">
+                <a href="https://github.com/savustefan?tab=repositories" target="_blank" class="fas fa-brands fa-code-branch"></a>
+                <a href="JavaScriptProjects/JSProjects.html" target="_blank" class="fas fa-regular fa-circle-info"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="" alt="future-project-image">
+            <h3>Template</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-light fa-laptop-code"></a>
+                <a href="#" class="fas fa-regular fa-circle-info"></a>
             </div>
         </div>
     </div>
 </section>
 
-<!--About me section-->
+<!-- portfolio section -->
 
-<section class="s2">
-    <div class="main-container">
-        <div class="about-wrapper">
-            <div class="about-me">
-                <h2>About me</h2>
-                <p>A student who discovered the realm of coding, eager to learn new things and struggle along the way. Creative oriented person, who likes reading fantasy books and playing video games.</p>
-                <a target="_blank" href="resume.pdf">Download Resume</a>
-                <hr>
+<!-- contact section -->
 
-                <h3>Expertize</h3>
-                <p>I have experience with the following:</p>
+<section class="contact" id="contact">
 
-                <div id="skills">
-                    <ul>
-                        <li>HTML - intermediate;</li>
-                        <li>CSS - basic understanding;</li>
-                        <li>JS - introduction level;</li>
-                        <li>WordPress - basic understanding.</li>
-                    </ul>
-                </div>
-            </div>
+    <h1 class="heading">contact <span> me </span></h1>
 
-            <div class="social-links">
+    <div class="icons-container">
 
-            </div>
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>My Email</h3>
+            <p>stefanadrian.savu@ulbsibiu.ro</p>
         </div>
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>My Number</h3>
+            <p></p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>My Address</h3>
+            <p>Tălmaciu, Sibiu Country</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <form action="https://formsubmit.co/8683472744c3f4d3efead7f3dc27f039" method="POST"/>
+            <input type="text" placeholder="name" name="name" class="box">
+            <input type="text" placeholder="subject" name="subject" class="box">
+            <input type="email" placeholder="email" name="email" class="box">
+            <textarea name="message" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="Send Message">
+        </form>
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11152.351196234575!2d24.24875734397975!3d45.669137710341346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474cf60e2c623ff1%3A0x9aec475eae2269c6!2sT%C4%83lmaciu%20555700!5e0!3m2!1sro!2sro!4v1663530687265!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
 
-<!--Projects section-->
-
-<section class="s1">
-    <div class="main-container">
-        <h3 style="text-align: center;">My projects</h3>
-        <div class="post-wrapper">
-            <div>
-                <div class="post">
-                    <img class="thumbnail" src="images/portfolio-image.jpg" alt="web-image">
-                    <div class="post-preview">
-                        <h4 class="post-title">Ground Zero - Portfolio Website</h4>
-                        <p class="post-intro">My first project is this portfolio website.</p>
-                        <hr>
-                        <a href="blog.html" target="_blank">Read More</a>
-                        <a href="#" style="float: right">Live Preview</a>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="post">
-                    <img class="thumbnail" src="images/from-the-shadows.png">
-                    <div class="post-preview">
-                        <h4 class="post-title">Thief - From the Shadows</h4>
-                        <p class="post-intro">A small text based RPG inspired from the Thief's universe.</p>
-                        <hr>
-                        <a href="blog2.html" target="_blank">Read More</a>
-                        <a href="https://savustefan.github.io/from-the-shadows/" target="_blank" style="float: right">Live Preview</a>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="post">
-                    <img class="thumbnail" src="images/ProjectJS.jpg">
-                    <div class="post-preview">
-                        <h4 class="post-title">JavaScript Projects</h4>
-                        <p class="post-intro">My showcase of different projects created in JavaScript.</p>
-                        <hr>
-                        <a href="https://github.com/savustefan?tab=repositories">See repos</a>
-                        <a href="JavaScriptProjects/JSProjects.html" target="_blank" style="float: right">Live Preview</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--Contact section-->
-
-<section class="s2">
-    <div class="main-container">
-        <h4 class="contact-title">Contact<hr class="horizontal-line"></h4>
-        <p style="text-align: center">Feel free to contact me as you wish</p>
-        <div class="about-wrapper">
-            <div class="contact-icon">
-                <!--<div><i class="fas fa-phone"></i>1234567890</div>-->
-                <div><i class="fas fa-map-marker-alt"></i>Tălmaciu, Sibiu</div>
-                <div><i class="far fa-envelope"></i>stefanadrian.savu@ulbsibiu.ro</div>
-                <div class="logo">
-                    <img src="images/logo.png" alt="logo">
-                </div>
-                <div class="vertical-line">
-                </div>
-            </div>
-
-            <form class="contact-form">
-                <label>Name</label>
-                <input class="input-field" type="text" name="name">
-                <label>Subject</label>
-                <input class="input-field" type="text" name="subject">
-                <label>Email</label>
-                <input class="input-field" type="text" name="email" placeholder="Optional">
-                <label>Message</label>
-                <textarea class="input-field" name="message"></textarea>
-                <input class="submit-button" type="submit" value="Send">
-            </form>
-
-        </div>
-    </div>
-</section>
-
-<footer class="footer">
-    <p>Thanks for checking me out!</p>
-    <div class="heart"></div>
-</footer>
+<!-- contact section -->
 
 <script src="script.js"></script>
-
 </body>
 </html>
-
