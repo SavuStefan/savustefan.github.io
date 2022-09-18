@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8"/>
+      <meta name="author" content="Savu Ștefan-Adrian">
+      <link rel="stylesheet" href="styles.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <!--<link href="https://unpkg.com/pattern.css" rel="stylesheet">-->
+      <title>Savu Adrian</title>
+  </head>
+<body>
+
+<audio id="notification">
+    <source src="assets/notification.mp3" type="audio/mpeg">
+</audio>
+
+<div id="toasts">
+</div>
+
+<!--Section Start-->
+
+<section class="s1">
+    <div class="main-container">
+        <div class="greeting-wrapper">
+            <span class="title">Hi,I'm Savu Adrian</span>
+            <span class="subtitle">#Learning Web Development</span>
+        </div>
+
+        <div class="intro-wrapper">
+            <div class="nav-wrapper">
+                    <div class="dots-wrapper">
+                        <button type="button" onclick="PlaySound()" id="dot-1" class="browser-dot"></button>
+                        <button type="button" id="dot-2" class="browser-dot"></button>
+                        <button type="button" id="dot-3" class="browser-dot"></button>
+                    </div>
+                <ul id="navigation">
+                    <li><a href="https://github.com/savustefan" target="_blank">Check out my work</a></li>
+                </ul>
+            </div>
+
+            <div class="left-column">
+                <div class="preview-shadow">
+                    <div id="preview">
+                        <div id="corner-tl" class="corner"></div>
+                        <div id="corner-tr" class="corner"></div>
+                        <h1>Hello there!</h1>
+                        <p>General Kenobi! You are a bold one entering here. Feel free to explore and welcome! :)</p>
+                        <div id="corner-bl" class="corner"></div>
+                        <div id="corner-br" class="corner"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right-column">
+                   <img class="img" src="Legacy%20Images/me.jpg" alt="me">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--About me section-->
+
+<section class="s2">
+    <div class="main-container">
+        <div class="about-wrapper">
+            <div class="about-me">
+                <h2>About me</h2>
+                <p>A student who discovered the realm of coding, eager to learn new things and struggle along the way. Creative oriented person, who likes reading fantasy books and playing video games.</p>
+                <a target="_blank" href="resume.pdf">Download Resume</a>
+                <hr>
+
+                <h3>Expertize</h3>
+                <p>I have experience with the following:</p>
+
+                <div id="skills">
+                    <ul>
+                        <li>HTML - intermediate;</li>
+                        <li>CSS - basic understanding;</li>
+                        <li>JS - introduction level;</li>
+                        <li>WordPress - basic understanding.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-links">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Projects section-->
+
+<section class="s1">
+    <div class="main-container">
+        <h3 style="text-align: center;">My projects</h3>
+        <div class="post-wrapper">
+            <div>
+                <div class="post">
+                    <img class="thumbnail" src="Legacy%20Images/portfolio-image.jpg" alt="web-image">
+                    <div class="post-preview">
+                        <h4 class="post-title">Ground Zero - Portfolio Website</h4>
+                        <p class="post-intro">My first project is this portfolio website.</p>
+                        <hr>
+                        <a href="blog.html" target="_blank">Read More</a>
+                        <a href="#" style="float: right">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="post">
+                    <img class="thumbnail" src="Legacy%20Images/from-the-shadows.png">
+                    <div class="post-preview">
+                        <h4 class="post-title">Thief - From the Shadows</h4>
+                        <p class="post-intro">A small text based RPG inspired from the Thief's universe.</p>
+                        <hr>
+                        <a href="blog2.html" target="_blank">Read More</a>
+                        <a href="https://savustefan.github.io/from-the-shadows/" target="_blank" style="float: right">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="post">
+                    <img class="thumbnail" src="Legacy%20Images/ProjectJS.jpg">
+                    <div class="post-preview">
+                        <h4 class="post-title">JavaScript Projects</h4>
+                        <p class="post-intro">My showcase of different projects created in JavaScript.</p>
+                        <hr>
+                        <a href="https://github.com/savustefan?tab=repositories">See repos</a>
+                        <a href="JavaScriptProjects/JSProjects.html" target="_blank" style="float: right">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Contact section-->
+
+<section class="s2">
+    <div class="main-container">
+        <h4 class="contact-title">Contact<hr class="horizontal-line"></h4>
+        <p style="text-align: center">Feel free to contact me as you wish</p>
+        <div class="about-wrapper">
+            <div class="contact-icon">
+                <!--<div><i class="fas fa-phone"></i>1234567890</div>-->
+                <div><i class="fas fa-map-marker-alt"></i>Tălmaciu, Sibiu</div>
+                <div><i class="far fa-envelope"></i>stefanadrian.savu@ulbsibiu.ro</div>
+                <div class="logo">
+                    <img src="Legacy%20Images/logo.png" alt="logo">
+                </div>
+                <div class="vertical-line">
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+                <label>Email</label>
+                <input class="input-field" type="text" name="email" placeholder="Optional">
+                <label>Message</label>
+                <textarea class="input-field" name="message"></textarea>
+                <input class="submit-button" type="submit" value="Send">
+            </form>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>Thanks for checking me out!</p>
+    <div class="heart"></div>
+</footer>
+
+<script src="script-legacy.js"></script>
+
+</body>
+</html>
+
