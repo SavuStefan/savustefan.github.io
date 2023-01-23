@@ -356,7 +356,7 @@ header .follow a:hover {
 }
 
 .portfolio .box-container .box {
-    flex:1 1 30rem;
+    flex:1 1 35rem;
     height:25rem;
     position: relative;
     overflow:hidden;
